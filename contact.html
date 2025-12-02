@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Chantal Uwitonze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chantal<span>UWITONZE</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get In <span class="text-primary">Touch</span></h1>
+                <h2>Let's Connect & Collaborate</h2>
+                <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development.</p>
+                
+                <div class="hero-buttons">
+                    <a href="mailto:uwitonzechantal@gmail.com" class="btn">Send Email</a>
+                    <a href="tel:+250780488835" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <!-- Contact-related image or icon -->
+                <div style="width: 350px; height: 350px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-envelope-open-text" style="font-size: 8rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out to me for backend development opportunities, collaborations, or any questions you might have.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kigali, Rwanda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+250 780 488 835</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>uwitonzechantal@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <h4>Education</h4>
+                                <p>University of Rwanda</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Message Subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="background-color: var(--bg-light); padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Location</h2>
+            
+            <div style="width: 100%; height: 400px; background-color: var(--border-color); border-radius: var(--radius); overflow: hidden;">
+                <!-- Simple map representation -->
+                <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Kigali, Rwanda</h3>
+                    <p>University of Rwanda</p>
+                    <p>Currently based in Kigali for my studies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chantal<span>UWITONZE</span></h3>
+                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
+                        <li><i class="fas fa-phone"></i> +250 780 488 835</li>
+                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-university"></i> University of Rwanda</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Working Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 9AM - 5PM</li>
+                        <li>Saturday: 10AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                        <li>Student Schedule</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
+                <p>Bachelor of Information Technology Student | University of Rwanda</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

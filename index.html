@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chantal Uwitonze - Backend Developer and IT Student from Rwanda">
+    <title>Chantal Uwitonze | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chantal<span>UWITONZE</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="text-primary">Chantal Uwitonze</span></h1>
+                <h2>Backend Developer & IT Student</h2>
+                <p>I specialize in building robust backend systems with Java Spring Boot. Currently pursuing my Bachelor's degree in Information Technology at the University of Rwanda.</p>
+                
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn">View My Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                </div>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kigali, Rwanda</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+250 780 488 835</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>University of Rwanda</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <!-- Replace with your profile photo -->
+                <img src="images/profile/chantal.jpg" alt="Chantal Uwitonze" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Spring Boot</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>REST APIs</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MySQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PostgreSQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MongoDB</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Replace with your project image -->
+                        <img src="images/projects/project1.jpg" alt="Project Management System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java • Spring Boot • MySQL</div>
+                        <h3 class="project-title">Project Management System</h3>
+                        <p class="project-description">A comprehensive system for managing projects, tasks, and team collaboration with real-time updates.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">JWT Auth</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Replace with your project image -->
+                        <img src="images/projects/project2.jpg" alt="Blog Management System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java • Spring Boot • MongoDB</div>
+                        <h3 class="project-title">Blog Management System</h3>
+                        <p class="project-description">Full-featured blogging platform with user management, commenting, and content moderation.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">MVC</span>
+                            <span class="project-tag">CRUD</span>
+                            <span class="project-tag">File Upload</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="projects.html" class="btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chantal<span>UWITONZE</span></h3>
+                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
+                        <li><i class="fas fa-phone"></i> +250 780 488 835</li>
+                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-university"></i> University of Rwanda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
+                <p>Bachelor of Information Technology Student | University of Rwanda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple CSS-only mobile menu toggle -->
+    <style>
+        #menuToggle:focus + #navLinks,
+        #navLinks:focus-within {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>

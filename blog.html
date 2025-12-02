@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Chantal Uwitonze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chantal<span>UWITONZE</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>My <span class="text-primary">Blog</span></h1>
+                <h2>Tech Insights & Tutorials</h2>
+                <p>Sharing my journey in backend development, Java Spring Boot tips, and lessons learned as a student developer.</p>
+            </div>
+            
+            <div class="hero-image">
+                <div style="width: 350px; height: 350px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-blog" style="font-size: 8rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/blog/blog1.jpg" alt="Spring Boot Tutorial">
+                        <span class="blog-category">Spring Boot</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Getting Started with Spring Boot</h3>
+                        <p class="blog-excerpt">A beginner's guide to building your first REST API with Spring Boot. Learn the basics of dependency injection, controllers, and services.</p>
+                        <a href="#" class="btn btn-small">Read More</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/blog/blog2.jpg" alt="Database Design">
+                        <span class="blog-category">Database</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 28, 2024</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3 class="blog-title">Database Design Best Practices</h3>
+                        <p class="blog-excerpt">Essential tips for designing efficient database schemas for your Spring Boot applications. Covering normalization, indexing, and relationships.</p>
+                        <a href="#" class="btn btn-small">Read More</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f59e0b, #d97706); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-code" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <span class="blog-category">Java</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-title">Java Collections Explained</h3>
+                        <p class="blog-excerpt">Understanding Java Collections Framework with practical examples. Lists, Sets, Maps, and when to use each in your applications.</p>
+                        <a href="#" class="btn btn-small">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Same footer as other pages -->
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chantal<span>UWITONZE</span></h3>
+                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
+                        <li><i class="fas fa-phone"></i> +250 780 488 835</li>
+                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-university"></i> University of Rwanda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
+                <p>Bachelor of Information Technology Student | University of Rwanda</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

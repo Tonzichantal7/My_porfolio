@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Chantal Uwitonze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chantal<span>UWITONZE</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>My <span class="text-primary">Projects</span></h1>
+                <h2>Backend Systems & Applications</h2>
+                <p>Here are some of the projects I've built using Java Spring Boot and other backend technologies. Each project demonstrates different aspects of backend development.</p>
+            </div>
+            
+            <div class="hero-image">
+                <!-- Project-related image or icon -->
+                <div style="width: 350px; height: 350px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-code" style="font-size: 8rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="section">
+        <div class="container">
+            <div class="project-filters">
+                <button class="filter-btn active">All Projects</button>
+                <button class="filter-btn">Java</button>
+                <button class="filter-btn">Spring Boot</button>
+                <button class="filter-btn">REST API</button>
+                <button class="filter-btn">Database</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project1.jpg" alt="Project Management System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java • Spring Boot • MySQL</div>
+                        <h3 class="project-title">Project Management System</h3>
+                        <p class="project-description">A comprehensive system for managing projects, tasks, and team collaboration. Features include user authentication, task assignment, progress tracking, and reporting.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">JWT Authentication</span>
+                            <span class="project-tag">Role-based Access</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project2.jpg" alt="Blog Management System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Spring Boot • MongoDB</div>
+                        <h3 class="project-title">Blog Management System</h3>
+                        <p class="project-description">Full-featured blogging platform with user management, post creation, commenting system, and content moderation tools.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">CRUD Operations</span>
+                            <span class="project-tag">File Upload</span>
+                            <span class="project-tag">Search Functionality</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project3.jpg" alt="E-commerce API">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Spring Boot • Microservices</div>
+                        <h3 class="project-title">E-commerce Backend API</h3>
+                        <p class="project-description">Microservices-based e-commerce system with product catalog, shopping cart, order processing, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Microservices</span>
+                            <span class="project-tag">Payment Gateway</span>
+                            <span class="project-tag">Inventory Management</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Add your project image -->
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-light), var(--accent-color)); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-university" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java • Spring Boot • PostgreSQL</div>
+                        <h3 class="project-title">School Management System</h3>
+                        <p class="project-description">Comprehensive system for managing student records, course enrollment, grades, and faculty information.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Student Portal</span>
+                            <span class="project-tag">Grade Management</span>
+                            <span class="project-tag">Attendance Tracking</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Add your project image -->
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f59e0b, #f97316); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-truck" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Java • REST API • MySQL</div>
+                        <h3 class="project-title">Logistics Tracking System</h3>
+                        <p class="project-description">System for tracking shipments, managing inventory, and optimizing delivery routes for logistics companies.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Real-time Tracking</span>
+                            <span class="project-tag">Route Optimization</span>
+                            <span class="project-tag">Inventory Management</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Add your project image -->
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #10b981, #059669); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-heartbeat" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Spring Boot • REST API</div>
+                        <h3 class="project-title">Healthcare Appointment System</h3>
+                        <p class="project-description">API for scheduling medical appointments, managing patient records, and sending notifications for healthcare providers.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Appointment Scheduling</span>
+                            <span class="project-tag">Patient Records</span>
+                            <span class="project-tag">Email Notifications</span>
+                            <span class="project-tag">Doctor Availability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Same footer as index.html -->
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chantal<span>UWITONZE</span></h3>
+                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
+                        <li><i class="fas fa-phone"></i> +250 780 488 835</li>
+                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-university"></i> University of Rwanda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
+                <p>Bachelor of Information Technology Student | University of Rwanda</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
