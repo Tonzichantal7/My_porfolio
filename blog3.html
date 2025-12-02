@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Collections Explained | Chantal Uwitonze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chantal<span>UWITONZE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Content -->
+    <section class="section">
+        <div class="container">
+            <h1>Java Collections Explained</h1>
+            <p><strong>Date:</strong> February 10, 2024 | <strong>Reading time:</strong> 6 min</p>
+             <img src="images/blog/blog3.jpg" alt="Java Collections" style="width:100%; max-width:700px; margin: 20px 0;">
+            <p>The Java Collections Framework is a set of classes and interfaces that implement commonly reusable collection data structures. It helps you manage groups of objects efficiently, making your code cleaner, faster, and easier to maintain. Collections are used in almost every Java application—from storing user input to managing complex datasets in enterprise applications.</p>
+
+<h3>Step 1: Learn Lists, Sets, and Maps</h3>
+<p>Each type of collection has a specific use case:</p>
+<ul>
+    <li><strong>Lists:</strong> Maintain the order of elements. Useful when you need to access elements by index or maintain insertion order. Examples: <code>ArrayList</code>, <code>LinkedList</code>.</li>
+    <li><strong>Sets:</strong> Ensure that each element is unique. Ideal for storing distinct items, such as user IDs or configuration keys. Examples: <code>HashSet</code>, <code>TreeSet</code>.</li>
+    <li><strong>Maps:</strong> Store key-value pairs for fast lookups. Excellent for scenarios like caching data or counting occurrences. Examples: <code>HashMap</code>, <code>TreeMap</code>.</li>
+</ul>
+
+<h3>Step 2: Choose the correct collection</h3>
+<p>Select a collection based on your requirements. For example, if you need to maintain insertion order, use a <code>LinkedHashMap</code> or <code>LinkedList</code>. If performance is crucial for lookups, <code>HashMap</code> or <code>HashSet</code> are ideal. Consider both functionality and performance characteristics when deciding which collection to use.</p>
+
+<h3>Step 3: Traverse collections efficiently</h3>
+<p>Iterating through collections efficiently is important for performance. Use enhanced for-loops for simplicity, or iterators when you need to safely remove elements during traversal. For large datasets, consider using streams introduced in Java 8, which allow functional-style operations on collections with concise and readable code.</p>
+
+<h3>Step 4: Use thread-safe collections when needed</h3>
+<p>In multi-threaded applications, standard collections can cause concurrency issues. Use thread-safe options like <code>ConcurrentHashMap</code>, <code>CopyOnWriteArrayList</code>, or wrap existing collections with <code>Collections.synchronizedList()</code> to prevent data corruption. Always choose the right collection to ensure both safety and performance.</p>
+
+<h3>Step 5: Understand practical use cases</h3>
+<p>Java collections simplify real-world tasks: storing and managing users, caching data, handling queues, or processing tasks in order. Knowing when and how to use each type of collection will make your applications more efficient, scalable, and maintainable.</p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chantal<span>UWITONZE</span></h3>
+                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
+                        <li><i class="fas fa-phone"></i> +250 780 488 835</li>
+                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-university"></i> University of Rwanda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
