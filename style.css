@@ -707,6 +707,26 @@ p {
     resize: vertical;
 }
 
+/* Contact form message */
+.form-message {
+    display: none;
+    margin-bottom: 1rem;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.form-message.visible { display: block; }
+.form-message.success {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+.form-message.error {
+    background-color: #fff7ed;
+    color: #7c2d12;
+    border: 1px solid #fb923c;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--bg-dark);
