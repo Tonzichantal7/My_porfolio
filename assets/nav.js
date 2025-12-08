@@ -41,12 +41,27 @@ document.addEventListener('DOMContentLoaded', function () {
                     icon.classList.add('fa-bars');
                 }
             }
+
+            // prevent body scroll on small screens when menu is open
+            try {
+                const isMobile = window.matchMedia('(max-width: 768px)').matches;
+                if (isMobile) {
+                    if (isActive) document.body.classList.add('no-scroll');
+                    else document.body.classList.remove('no-scroll');
+                }
+            } catch (err) {
+                // ignore
+            }
         });
 
         // Close menu when clicking a nav link (useful on mobile)
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) closeMenu();
+                if (navLinks.classList.contains('active')) {
+                    closeMenu();
+                    // remove no-scroll class too
+                    document.body.classList.remove('no-scroll');
+                }
             });
         });
 
@@ -54,7 +69,28 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && navLinks.classList.contains('active')) {
                 closeMenu();
+                document.body.classList.remove('no-scroll');
             }
         });
+
+        // Close when clicking outside the nav (use capture to handle early)
+        document.addEventListener('click', function (ev) {
+            const target = ev.target;
+            const nav = menuToggle.closest('nav') || document;
+            if (!navLinks.classList.contains('active')) return;
+            if (menuToggle.contains(target) || navLinks.contains(target)) return;
+            closeMenu();
+            document.body.classList.remove('no-scroll');
+        }, true);
+
+        // Also handle touchstart for mobile
+        document.addEventListener('touchstart', function (ev) {
+            const target = ev.target;
+            if (!navLinks.classList.contains('active')) return;
+            if (menuToggle.contains(target) || navLinks.contains(target)) return;
+            closeMenu();
+            document.body.classList.remove('no-scroll');
+        }, true);
+
     });
 });
