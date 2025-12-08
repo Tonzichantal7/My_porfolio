@@ -169,6 +169,13 @@ p {
     font-size: 1.5rem;
     color: var(--text-dark);
     cursor: pointer;
+    padding: 8px 12px;
+    margin: 0;
+    min-height: 44px;
+    min-width: 44px;
+    pointer-events: auto;
+    z-index: 1001;
+    flex-shrink: 0;
 }
 
 /* ===== HERO SECTION ===== */
@@ -842,21 +849,33 @@ p {
         box-shadow: var(--shadow);
         transform: translateY(-100%);
         opacity: 0;
-        transition: var(--transition);
-        z-index: 999;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 998;
+        pointer-events: none;
     }
     
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
     }
     
     .menu-toggle {
         display: block;
+        pointer-events: auto !important;
     }
     
-    .menu-toggle.active i::before {
-        content: '\f00d'; /* FontAwesome close icon */
+    .menu-toggle:active,
+    .menu-toggle:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
     }
     
     .profile-img {
