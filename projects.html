@@ -32,14 +32,15 @@
         <div class="container">
             <div class="hero-content">
                 <h1>My <span class="text-primary">Projects</span></h1>
-                <h2>Full-Stack Applications & Backend Systems</h2>
-                <p>Here are some of the projects I've built using frontend technologies like HTML, CSS, JavaScript, Firebase, and backend technologies like Java Spring Boot. Each project demonstrates different aspects of development.</p>
+                <h2>Software, Data & Digital Product Development</h2>
+                <p>A selection of web and mobile applications, REST APIs, data-driven solutions, and IoT-based products. Each project reflects practical problem solving, user needs, and hands-on technology development.</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/Tonzichantal7" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> View GitHub Profile</a>
+                </div>
             </div>
-            
             <div class="hero-image">
-                <!-- Project-related image or icon -->
                 <div style="width: 350px; height: 350px; border-radius: 50%; overflow: hidden;">
-                    <img src="images/projects/project.jpg" alt="Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/projects/project.jpg" alt="Projects" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -49,23 +50,47 @@
     <section class="section">
         <div class="container">
             <div class="project-filters">
-                <button class="filter-btn active">All Projects</button>
-                <button class="filter-btn">Frontend</button>
-                <button class="filter-btn">Backend</button>
-                <button class="filter-btn">Firebase</button>
-                <button class="filter-btn">API</button>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-iot">AI / IoT</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
             </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 - Finance Tracker -->
-                <div class="project-card">
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- ★ FEATURED: E-MBONI -->
+                <div class="project-card featured-project" data-category="ai-iot">
                     <div class="project-image">
-                        <img src="images/projects/finance-tracker.jpg" alt="Finance Tracker">
+                        <img src="images/projects/project1.jpg" alt="E-MBONI AI/IoT Digital Solution">
+                        <div class="featured-badge"><i class="fas fa-trophy"></i> 1st Place — DSE Hackathon</div>
                     </div>
                     <div class="project-content">
-                        <div class="project-category">HTML • CSS • JavaScript</div>
+                        <div class="project-category">AI • IoT • Full Stack</div>
+                        <h3 class="project-title">E-MBONI — AI/IoT Digital Solution</h3>
+                        <p class="project-description">A real-world digital solution developed through VisionGuard Ltd, combining mobile technology, IoT, product development, software development, testing, and implementation. Won 1st place at the DSE Hackathon and received funding for continued implementation.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">Mobile</span>
+                            <span class="project-tag">VisionGuard Ltd</span>
+                            <span class="project-tag">Hackathon Winner</span>
+                            <span class="project-tag">Funded</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-note"><i class="fas fa-lock"></i> Private / Proprietary — Under active development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finance Tracker -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="images/projects/finance-tracker.jpg" alt="Finance Tracker App">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">HTML • CSS • JavaScript • Firebase</div>
                         <h3 class="project-title">Finance Tracker App</h3>
-                        <p class="project-description">Personal finance management application with expense tracking, budget planning, Firebase authentication and Firebase Database for secure data storage.</p>
+                        <p class="project-description">Personal finance management web application with expense tracking, budget planning, Firebase Authentication for secure login, and Firebase Realtime Database for persistent data storage.</p>
                         <div class="project-tags">
                             <span class="project-tag">Firebase Auth</span>
                             <span class="project-tag">Firebase Database</span>
@@ -73,67 +98,74 @@
                             <span class="project-tag">Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://finance-tracker-jade-tau.vercel.app/" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://finance-tracker-jade-tau.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 2 - Recipe Explorer -->
-                <div class="project-card">
+
+                <!-- Recipe Explorer -->
+                <div class="project-card" data-category="fullstack">
                     <div class="project-image">
                         <img src="images/projects/recipe-explorer.jpg" alt="Recipe Explorer">
                     </div>
                     <div class="project-content">
-                        <div class="project-category">HTML • CSS • JavaScript</div>
+                        <div class="project-category">HTML • CSS • JavaScript • Firebase</div>
                         <h3 class="project-title">Recipe Explorer</h3>
-                        <p class="project-description">A dynamic recipe discovery app using MealDB API to fetch recipe images and data with Firebase authentication for user management.</p>
+                        <p class="project-description">A dynamic recipe discovery web app that integrates the MealDB REST API to fetch and display recipe data and images. Includes Firebase Authentication for user account management.</p>
                         <div class="project-tags">
                             <span class="project-tag">MealDB API</span>
                             <span class="project-tag">Firebase Auth</span>
-                            <span class="project-tag">API Integration</span>
+                            <span class="project-tag">REST API</span>
                             <span class="project-tag">Responsive</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://recipe-explor.vercel.app/" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://recipe-explor.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 3 - Employee Management -->
-                <div class="project-card">
+
+                <!-- ATM Simulation -->
+                <div class="project-card" data-category="backend">
                     <div class="project-image">
-                        <img src="images/projects/project1.jpg" alt="Employee Management System">
+                        <img src="images/projects/project2.jpg" alt="ATM Simulation System">
                     </div>
                     <div class="project-content">
-                        <div class="project-category">Java • Spring Boot • MySQL</div>
-                        <h3 class="project-title">Employee Management System</h3>
-                        <p class="project-description">A comprehensive system for managing employee records, departments, and HR operations. Features include user authentication, employee profiles, department management, and reporting.</p>
+                        <div class="project-category">Java • OOP</div>
+                        <h3 class="project-title">ATM Simulation System</h3>
+                        <p class="project-description">A Java-based ATM simulation implementing core banking operations including cash deposits, cheque deposits, and mobile transfer transactions. Demonstrates object-oriented design with encapsulation and class-based architecture.</p>
                         <div class="project-tags">
-                            <span class="project-tag">REST API</span>
-                            <span class="project-tag">JWT Authentication</span>
-                            <span class="project-tag">Role-based Access</span>
-                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">OOP</span>
+                            <span class="project-tag">Banking Logic</span>
+                            <span class="project-tag">Encapsulation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Tonzichantal7/ATM" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 4 - Blog Management -->
-                <div class="project-card">
+
+                <!-- Area Calculator -->
+                <div class="project-card" data-category="backend">
                     <div class="project-image">
-                        <img src="images/projects/project2.jpg" alt="Blog Management System">
+                        <img src="images/projects/project1.jpg" alt="Shape Area Calculator">
                     </div>
                     <div class="project-content">
-                        <div class="project-category">Spring Boot • MongoDB</div>
-                        <h3 class="project-title">Blog Management System</h3>
-                        <p class="project-description">Full-featured blogging platform with user management, post creation, commenting system, and content moderation tools.</p>
+                        <div class="project-category">Java • OOP • Polymorphism</div>
+                        <h3 class="project-title">Shape Area Calculator</h3>
+                        <p class="project-description">A Java application demonstrating object-oriented programming principles including inheritance, polymorphism, and abstract classes. Calculates areas for multiple shape types (Circle, Rectangle, Triangle) through a shared abstract Shape interface.</p>
                         <div class="project-tags">
-                            <span class="project-tag">CRUD Operations</span>
-                            <span class="project-tag">File Upload</span>
-                            <span class="project-tag">Search Functionality</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Inheritance</span>
+                            <span class="project-tag">Polymorphism</span>
+                            <span class="project-tag">Abstract Classes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Tonzichantal7/Areacalculating" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -145,7 +177,7 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h3>Chantal<span>UWITONZE</span></h3>
-                    <p>Backend Developer specializing in Java Spring Boot. Currently studying IT at University of Rwanda.</p>
+                    <p>Information Technology professional focused on software, data, mobile, and digital product solutions.</p>
                 </div>
                 
                 <div class="footer-col">
@@ -164,7 +196,7 @@
                     <ul class="footer-links">
                         <li><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</li>
                         <li><i class="fas fa-phone"></i> +250 780 488 835</li>
-                        <li><i class="fas fa-envelope"></i> uwitonzechantal@gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> chantaluwitonze6@gmail.com</li>
                         <li><i class="fas fa-university"></i> University of Rwanda</li>
                     </ul>
                 </div>
@@ -172,10 +204,26 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2024 Chantal Uwitonze. All rights reserved.</p>
-                <p>Bachelor of Information Technology Student | University of Rwanda</p>
+                <p>Software Development | Data Analysis | Digital Product Development</p>
             </div>
         </div>
     </footer>
     <script src="assets/nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
+            const cards = document.querySelectorAll('#projectsGrid .project-card');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    const filter = this.dataset.filter;
+                    cards.forEach(card => {
+                        card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

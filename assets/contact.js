@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendBtn = document.getElementById('contactSendBtn');
     if (!form) return;
 
+    // Native mailto forms should open the user's email client instead of being simulated.
+    if (form.action.startsWith('mailto:') || form.action.includes('formsubmit.co')) return;
+
     function showMessage(text, type = 'success') {
         if (!msgEl) {
             alert(text);

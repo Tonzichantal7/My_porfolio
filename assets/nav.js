@@ -63,6 +63,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 closeMenu();
             });
         });
+
+        const sectionLinks = navLinks.querySelectorAll('a[href^="#"]');
+        const sections = Array.from(sectionLinks)
+            .map(link => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        if (sections.length) {
+            const sectionObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    sectionLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                    });
+                });
+            }, { rootMargin: '-35% 0px -55% 0px' });
+            sections.forEach(section => sectionObserver.observe(section));
+        }
         
         // Close menu on Escape key
         document.addEventListener('keydown', function (e) {
